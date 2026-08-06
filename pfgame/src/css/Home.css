@@ -21,6 +21,7 @@
   flex-direction: column;
   gap: 5px;
   font-family: "Gagalin", sans-serif;
+  font-weight: bold;
   list-style: none;
   text-align: right;
 }
