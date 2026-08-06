@@ -1,15 +1,28 @@
-import "../css/Home.css"
+import "../css/Home.css";
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
-    <section className="home">
-      <div className="home-container">
-        <h1 className="home-title">Welcome to My Portfolio</h1>
-        <h2 className="option-1">Projects</h2>
-        <h2 className="option-2">About Me</h2>
-        <h2 className="option-3">About Me</h2>
+    <section className="hero">
+      <div className="hero-content">
+        <ul className="list">
+          <li>
+            <Link to="/projectos" className="menu-link menu-link1">PROJECTOS</Link>
+          </li>
+          <li>
+            <Link to="/sobre-mi" className="menu-link menu-link2">SOBRE MÍ</Link>
+          </li>
+          <li>
+            <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="menu-link menu-link3">LINKEDIN</a>
+          </li>
+          <li>
+            <a href="https://github.com/NicoCastellanos" target="_blank" rel="noreferrer" className="menu-link menu-link4">GITHUB</a>
+          </li>
+          <li>
+            <a href="mailto:nicolas.castellanos012@gmail.com" className="menu-link menu-link5">EMAIL</a>
+          </li>
+        </ul>
       </div>
-  </section>
-)}
-
-export default Home
+    </section>
+  );
+}
