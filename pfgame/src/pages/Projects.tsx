@@ -37,8 +37,7 @@ function Projects() {
             ))}
           </ul>
         </div>
-
-        {/* Lado Derecho: Preview 9:16 */}
+        
         <div className="project-preview">
           {currentImage && (
             <img src={currentImage} alt="Preview" className="preview-img" />
