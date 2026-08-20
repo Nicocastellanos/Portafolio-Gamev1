@@ -13,7 +13,7 @@ function Home() {
             <Link to="/sobre-mi" className="menu-link menu-link2">SOBRE MÍ</Link>
           </li>
           <li>
-            <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="menu-link menu-link3">LINKEDIN</a>
+            <a href="https://www.linkedin.com/in/nicol%C3%A1s-castellanos-rodr%C3%ADguez-661276383/" target="_blank" rel="noreferrer" className="menu-link menu-link3">LINKEDIN</a>
           </li>
           <li>
             <a href="https://github.com/NicoCastellanos" target="_blank" rel="noreferrer" className="menu-link menu-link4">GITHUB</a>
