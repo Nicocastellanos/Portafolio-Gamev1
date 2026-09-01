@@ -1,0 +1,146 @@
+.project-detail-container {
+  width: 100vw;               /* Ancho total del viewport */
+  min-height: 100vh;          /* Alto mínimo total */
+  margin: 0;
+  padding: 0 0 4rem 0;        /* Sin padding a los lados para pegar la imagen a los bordes */
+  box-sizing: border-box;
+  background-color: #2b4257;  /* Fondo azul/gris */
+  color: #ffffff;
+  font-family: "Gagalin", sans-serif, system-ui;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+  overflow-x: hidden;         /* Evita scroll horizontal */
+}
+
+/* 2. Imagen superior pegada de lado a lado y con CORTE DIAGONAL ABAJO */
+.project-hero-img {
+  width: 100%;
+  height: 55vh;               /* Ocupa el 55% de la altura de la pantalla */
+  position: relative;
+  overflow: hidden;
+  background-color: #1a2632;
+  
+  /* Corte diagonal agresivo en la parte inferior */
+  clip-path: polygon(0 0, 100% 0, 100% 88%, 0 100%);
+}
+
+.project-hero-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;          /* Llena todo el espacio horizontal sin deformarse */
+  object-position: center;
+  display: block;
+}
+
+/* 3. Contenedor para limitar el ancho solo del contenido de texto/tecnologías */
+.tech-section,
+.project-description {
+  width: 100%;
+  max-width: 900px;           /* Mantiene el contenido legible y centrado */
+  padding: 0 2rem;
+  box-sizing: border-box;
+}
+
+/* 4. Estilos de las Tecnologías */
+.tech-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.tech-title {
+  font-size: 2rem;
+  letter-spacing: 2px;
+  color: #63b3ed;
+  text-shadow: 2px 2px 0px #000;
+  margin: 0;
+}
+
+.tech-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.tech-card {
+  background: #1e2d3b;
+  border: 2px solid #ffffff;
+  padding: 0.6rem 1.4rem;
+  transform: skewX(-8deg);    /* Estilo angular tipo Persona */
+  box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.6);
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.tech-card:hover {
+  transform: skewX(-8deg) scale(1.05);
+  background: #63b3ed;
+}
+
+.tech-card:hover .tech-name {
+  color: #121c24;
+}
+
+.tech-name {
+  display: inline-block;
+  transform: skewX(8deg);
+  font-size: 1.2rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #ffffff;
+}
+
+.divider {
+  width: 100%;
+  max-width: 900px;
+  border: none;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0;
+}
+
+
+.project-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+  text-align: center;
+}
+
+.project-title {
+  font-size: 3.2rem;
+  margin: 0;
+  letter-spacing: 2px;
+  text-shadow: 3px 3px 0px #000;
+}
+
+.project-text {
+  font-family: system-ui, -apple-system, sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.7;
+  color: #d1d5db;
+  max-width: 750px;
+  margin: 0 auto;
+}
+.repo-btn {
+  display: inline-block;
+  padding: 0.8rem 2.5rem;
+  background-color: #4b8cc2;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.4rem;
+  border-radius: 20px;
+  box-shadow: 0 4px 0px #1c3d5a;
+  transition: all 0.2s ease;
+}
+
+.repo-btn:hover {
+  transform: translateY(-2px);
+  background-color: #5aa1da;
+  box-shadow: 0 6px 0px #1c3d5a;
+}

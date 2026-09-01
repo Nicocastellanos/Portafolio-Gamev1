@@ -2,16 +2,16 @@ import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import '../css/Projects.css'
 
-import novaImg from '../assets/NovaTellus.jpg'
-import todoImg from '../assets/TodoTask.jpg' 
-import ropaImg from '../assets/Ropa.png'     
+import novaImg from '../assets/nova tellus.png'
+import todoImg from '../assets/todo task.png' 
+import ropaImg from '../assets/evently.jpg'     
 
 const PROJECTS_DATA = [
-  { id: 1, title: 'NOVA TELLUS', path: '/project1', img: novaImg, class: 'item-1' },
-  { id: 2, title: 'TODO TASK', path: '/project2', img: todoImg, class: 'item-2' },
-  { id: 3, title: 'RESERVAS', path: '/project3', img: ropaImg, class: 'item-3' },
-  { id: 4, title: 'ITCH.IO', path: '/project4', img: todoImg, class: 'item-4' },
-  { id: 5, title: 'LCI BOGOTA', path: '/project5', img: novaImg, class: 'item-5' }
+  { id: 1, title: 'NOVA TELLUS', path: '/Novatellus', img: novaImg, class: 'item-1' },
+  { id: 2, title: 'TODO TASK', path: '/TodoTask', img: todoImg, class: 'item-2' },
+  { id: 3, title: 'RESERVAS', path: '/Evently', img: ropaImg, class: 'item-3' },
+  { id: 4, title: 'ITCH.IO', path: '/ItchIO', img: todoImg, class: 'item-4' },
+  { id: 5, title: 'LCI BOGOTA', path: '/LCIBOGOTA', img: novaImg, class: 'item-5' }
 ]
 
 function Projects() {
